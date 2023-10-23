@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+  
+:root {
+  --bg-color: #202026;
+  --main-color: #17B6CB;
+  --2nd-main-color: #ffffffcc;
+  --text-color: #fff;
+  --big-font: 5rem;
+  --h2-font: 1.9rem;
+  --p-font: 1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  padding: 24px 14%;
+  transition: 0.3s;
+  box-shadow: #106c7884 0px 25px 20px -20px;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+span {
+  color: var(--main-color);
+}
+
+.navbar {
+  display: flex;
+}
+.navbar a {
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  background: var(--main-color);
+  transition: 0.3s;
+}
+
+#menu-icon {
+  font-size: 28px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  padding: 120px 14%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 450px));
+  padding: 25px;
+  row-gap: 1rem;
+}
+
+input, select, textarea {
+  padding: 5px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+label, input {
+  display: inline-block;
+}
+
+
+[type="text"]:focus, [type="tel"]:focus {
+  box-shadow: inset 1px 1px 0.5px 2.5px rgba(0, 0, 0, 0.5) ;
+  border: none;
+}
+
+
+
+.btn {
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+  padding: 0 25px;
+  line-height: 42px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: ease all 0.35s;  
+}
+
+.btn:hover {
+  background: var(--text-color);
+  color: var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  cursor: pointer;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+  display: inline-block;
+}
+
+.buttons input{
+  margin: 15px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 30px;
+  color: var(--2nd-main-color);
+  background: #0b0b13;
+  margin-top: 3rem;
+  line-height: 1.8rem;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+@media (max-width: 1020px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p, label {
+    font-size: 12px;
+  }
+}

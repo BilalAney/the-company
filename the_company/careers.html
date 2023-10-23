@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="careersStyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>THE COMPANY - Careers</title>
+</head>
+<body>
+    <header>
+    <!--logo and icon-->
+    <a href="index.html" class="logo">THE <span>COMPANY</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <!--Navbar-->
+    <ul class="navbar">
+      <li><h4>Carrers</h4></li>
+    </header>
+
+    <main>
+      <section>
+        <h1 style="text-align: center;"><i class='bx bx-briefcase' style="color: var(--main-color);"></i></h1>
+        <h1 style="text-align: center; letter-spacing: 4px; margin-bottom: 20px; margin-top: 25px;"><span>CAREERS CENTER</span></h1>
+        <h2>When you get the chance to <span>join us </span>don't think twice!</h2>
+        <br>
+        <p>We are happy that we were able to hire the most influential individuals, and we will definitely review all the CVs that we receive. <span> Send it, and we'll make sure that our teams see it!</span></p>
+        <br>
+        <!-- The Form -->
+        <form action="" method="post" target="_blank" name="form-1" id="form-1">
+          <!-- Personal info -->
+          <fieldset class="sequare">
+            <legend>Personal info</legend>
+
+            <div class="input-field">
+              <label for="fName">First name</label>
+              <input type="text" id="fName"/>
+            </div>
+
+            <div class="input-field">
+              <label for="lName">Last name</label>
+              <input type="text" id="lName"/>
+            </div>
+
+            <div class="input-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone"/>
+            </div>
+
+            <fieldset class="inner-sequare" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(auto, 50px));">
+              <legend>Gender</legend>
+              <input type="radio" id="male" name="gender" value="Male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="Female">
+              <label for="female">Female</label>
+            </fieldset>
+
+          </fieldset>
+
+          <!-- Academic Info -->
+          <fieldset class="sequare">
+            <legend>Academic Info</legend>
+
+              <label for="level">Academic level</label>
+              <select name="degrees" id="level">
+                <option value="initial">Your level</option>
+                <option value="High School">High School</option>
+                <option value="Diplom">Diploma</option>
+                <option value="Bechalor">Bechalor degree</option>
+                <option value="Master">Master degree</option>
+                <option value="PhD">PhD degree</option>
+              </select>
+
+              <label for="field">Field</label>
+              <select name="fields" id="field" disabled>
+                <option value="IT">IT science</option>
+                <option value="CS">Computer Science</option>
+                <option value="CE">Computer Engineering</option>
+                <option value="SE">Software Engineering</option>
+              </select>
+
+              <label for="graduation">Garduation year</label>
+              <input type="number" min="1990" max="2023" id="graduation">
+          </fieldset>
+
+          <!-- Profession Info -->
+          <fieldset class="sequare">
+            <legend>Professional Info</legend>
+
+            <label for="job">Your current job, or previous one(if any)</label>
+            <input type="text" name="job" id="job" placeholder="optional, don't mention it if you don't want to"/>
+            <label for="notes">Extra notes?</label>
+            <textarea name="notes" id="notes" rows="4" placeholder="Your notes"></textarea>
+            <label for="cv">Attach your CV </label>
+            <input type="file" id="cv">
+          </fieldset>
+
+          <div class="buttons" style="text-align: center;">
+            <input type="submit" class="btn" />
+            <input type="reset" class="btn" />
+          </div>
+
+        </form>
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="copyright">
+        <p>Copyright ©2023. All Rights Reserved.<br />Web Design Assignment</p>
+      </div>
+    </footer>
+
+</body>
+<script src="career.js"></script>
+</html>
