@@ -239,14 +239,6 @@ section {
   font-size: 4rem;
   letter-spacing: normal;
 }
-
-
-/* @keyframes movement {
-  from {transform: translate3d(100%, 0, 0); }
-  to {transform: translate3d(-400%, 0, 0);}
-}
- */
-
 /* ------------------------------ */
 
 
@@ -292,60 +284,6 @@ section {
   width: auto;
 }
 
-/* the following css is deprecated */
-/* .photoshop {
-  background-color: #fecb00;
-  height: 100%;
-  width: 90%;
-}
-.illustrator {
-  background-color: #fecb00;
-  height: 100%;
-  width: 70%;
-}
-.indesign {
-  background-color: #fecb00;
-  height: 100%;
-  width: 70%;
-}
-.premiere {
-  background-color: #fecb00;
-  height: 100%;
-  width: 50%;
-}
-.java {
-  background-color: #fecb00;
-  height: 100%;
-  width: 75%;
-}
-.javascript {
-  background-color: #fecb00;
-  height: 100%;
-  width: 75%;
-}
-.html {
-  background-color: #fecb00;
-  height: 100%;
-  width: 90%;
-}
-.css {
-  background-color: #fecb00;
-  height: 100%;
-  width: 70%;
-}
-.php {
-  background-color: #fecb00;
-  height: 100%;
-  width: 50%;
-}
-.react {
-  background-color: #fecb00;
-  height: 100%;
-  width: 20%;
-}
- */
-/* ------------------ */
-
 .cta {
   background: #0b0b13;
   width: 100%;
@@ -374,51 +312,6 @@ section {
   margin-top: 4.2rem;
 }
 
-/* ------------------ */
-/* .contact-form form {
-  position: relative;
-  width: 550px;
-}
-form input,
-form textarea {
-  width: 100%;
-  padding: 20px;
-  border: none;
-  outline: none;
-  background-color: #0b0b13;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-}
-form input::placeholder form textarea::placeholder {
-  color: var(--2nd-main-color);
-}
-textarea {
-  resize: none;
-  height: 200px;
-}
-form .send-btn {
-  background: var(--main-color);
-  color: var(--text-color);
-  box-shadow: 4px 4px var(--text-color);
-  padding: 0 25px;
-  line-height: 42px;
-  display: inline-block;
-  border: 1px solid transparent;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  transition: ease all 0.35s;
-  cursor: pointer;
-}
-form .send-btn:hover {
-  background: var(--text-color);
-  color: var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-}
- */
-/* ------------------ */
-
 .copyright {
   text-align: center;
   padding: 30px;
@@ -427,6 +320,8 @@ form .send-btn:hover {
   margin-top: 3rem;
   line-height: 1.8rem;
 }
+
+/* MEDIA QUERIES  */
 @media (max-width: 1430px) {
   header {
     padding: 25px 3%;
@@ -454,7 +349,7 @@ form .send-btn:hover {
     margin-top: 80px;
   }
   .home {
-    margin-top: 40px; /*Bilal <-- Added this*/
+    margin-top: 40px;
   }
 }
 
